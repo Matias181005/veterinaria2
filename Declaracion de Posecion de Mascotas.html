@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Declarante y Mascota</title>
+    <link rel="stylesheet" href="Declaracion de Posecion de Mascotas.css">
+</head>
+<body>
+    <form action="#" method="post" class="formulario">
+        <h2>Datos Del Declarante</h2>
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre Completo">
+        </div>
+        <div class="campo">
+            <label for="cedula">Cédula de Identidad:</label>
+            <input type="text" id="cedula" name="cedula" required placeholder="Cedula de Identidad">
+        </div>
+        <div class="campo">
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio">
+        </div>
+        <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Telefono celular">
+        </div>
+        <div class="campo">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Correo electronico">
+        </div>
+        <div class="campo">
+            <label for="profesion">Profesión u Oficio:</label>
+            <input type="text" id="profesion" name="profesion" required placeholder="Prefesion">
+        </div>
+        <h2>Datos de Mascota</h2>
+        <div class="campo">
+            <label for="nombre_mascota">Nombre de la Mascota:</label>
+            <input type="text" id="nombre_mascota" name="nombre_mascota" required placeholder="Nombre Mascota">
+        </div>
+        <div class="campo">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Macho</option>
+                <option value="femenino">Hembra</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="especie">Especie:</label>
+            <input type="text" id="especie" name="especie" required placeholder="Especie">
+        </div>
+        <div class="campo">
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza" name="raza" required placeholder="Raza">
+        </div>
+        <div class="campo">
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required placeholder="Color Mascota">
+        </div>
+        <div class="campo">
+            <label for="esterilizado">Esterilizado:</label>
+            <select id="esterilizado" name="esterilizado" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required placeholder="Fechas de nacimiento mascota">
+        </div>
+        <div class="campo">
+            <label for="razon_tenencia">Razón de Tenencia:</label>
+            <select id="razon_tenencia" name="razon_tenencia" required>
+                <option value="caza">Caza</option>
+                <option value="reproduccion">Reproducción</option>
+                <option value="compania">Compañía</option>
+                <option value="seguridad">Seguridad</option>
+                <option value="deporte">Deporte</option>
+                <option value="terapia">Terapia</option>
+                <option value="exposicion">Exposición</option>
+                <option value="asistencia">Asistencia</option>
+                <option value="trabajo">Trabajo</option>
+            </select>
+        </div>
+        <div class="campo enviar">
+        <div class="campo">
+            <label for="firma">Firma y Cedula de Identidad</label>
+            <canvas id="firma" width="300" height="150"></canvas>
+        </div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
